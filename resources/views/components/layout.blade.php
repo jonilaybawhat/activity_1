@@ -55,6 +55,16 @@
         background: #7f5af0;
         transform: scale(1.1);
     }
+
+    .card {
+        background: #1f2937;
+        padding: 1.5rem;
+        border-radius: 15px;
+        text-align: center;
+        max-width: 400px;
+        margin: 20px auto;
+        color: white;
+    }
     </style>
 </head>
 <body>
