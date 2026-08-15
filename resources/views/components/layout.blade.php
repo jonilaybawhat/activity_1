@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ $title ?? 'Music Player App' }}</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
     *{
         margin:0;
@@ -73,6 +76,7 @@
         <a href="/" class="nav-item {{ request()->is('/') ? 'active' : '' }}" title="Player">🎵</a>
         <a href="/about" class="nav-item {{ request()->is('about') ? 'active' : '' }}" title="About">👤</a>
         <a href="/contact" class="nav-item {{ request()->is('contact') ? 'active' : '' }}" title="Contact">✉️</a>
+        <a href="/products" class="nav-item {{ request()->is('products*') ? 'active' : '' }}" title="Products">🛍️</a>
     </nav>
 
     {{ $slot }}
